@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpay - Transbank</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="webpay-body">
+    <div class="webpay-header">
+        <div class="gradient-stripe"></div>
+    </div>
+
+    <main class="webpay-container">
+        <div class="webpay-logo">
+            <h1>webpay</h1>
+            <span class="transbank-text">transbank</span>
+        </div>
+
+        <div class="webpay-content">
+            <p class="inscription-text">Estás inscribiendo tu tarjeta en:</p>
+            <p class="fpay-text">FPAY</p>
+
+            <div class="debit-section">
+                <h2>Débito</h2>
+                <div class="form-group">
+                    <label for="bank">Banco</label>
+                    <select id="bank" disabled>
+                        <option value="">Selecciona tu banco</option>
+                    </select>
+                </div>
+                <p class="validation-text">Validaremos la tarjeta con un cobro único de $50 que serán reembolsados</p>
+                <button class="inscription-button" disabled>Inscribir</button>
+            </div>
+        </div>
+
+        <footer class="webpay-footer">
+            <a href="#" class="abandon-link">< Abandonar y volver al comercio</a>
+            <p class="security-text">
+                <span class="lock-icon">🔒</span>
+                Esta transacción se está realizando bajo un sistema seguro, 
+                <a href="#" class="security-link">políticas de seguridad</a>
+            </p>
+        </footer>
+    </main>
+</body>
+</html>

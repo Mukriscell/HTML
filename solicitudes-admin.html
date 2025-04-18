@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitudes de Servicio - Administrador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Buenos Aires</div>
+        <ul class="nav-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Historial de ventas</a></li>
+            <li><a href="#">Solicitudes de servicios</a></li>
+            <li><a href="#">Mis datos</a></li>
+            <li><a href="#">Cerrar sesión</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Solicitudes de Servicio de Empresa (Vista de Administrador)</h1>
+        
+        <div class="table-container">
+            <table class="service-table">
+                <thead>
+                    <tr>
+                        <th>Nro SS</th>
+                        <th>Cliente</th>
+                        <th>Tipo SS</th>
+                        <th>Fecha Visita</th>
+                        <th>Hora Visita</th>
+                        <th>Técnico</th>
+                        <th>Descripción</th>
+                        <th>Estado SS</th>
+                        <th>Opciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>111</td>
+                        <td>Ana Torres</td>
+                        <td>Instalación</td>
+                        <td>02-03-2022</td>
+                        <td>9:00</td>
+                        <td>Juan Gatica</td>
+                        <td>Instalar equipo</td>
+                        <td class="status-closed">Cerrada</td>
+                        <td class="action-buttons">
+                            <a href="#" class="btn-accept">Aceptar</a>
+                            <a href="#" class="btn-modify">Modificar</a>
+                            <a href="#" class="btn-close">Cerrar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>666</td>
+                        <td>Ana Torres</td>
+                        <td>Mantención</td>
+                        <td>27-03-2022</td>
+                        <td>11:00</td>
+                        <td>Pedro Díaz</td>
+                        <td>Mantención programada</td>
+                        <td class="status-closed">Cerrada</td>
+                        <td class="action-buttons">
+                            <a href="#" class="btn-accept">Aceptar</a>
+                            <a href="#" class="btn-modify">Modificar</a>
+                            <a href="#" class="btn-close">Cerrar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>888</td>
+                        <td>Ana Torres</td>
+                        <td>Instalación</td>
+                        <td>08-04-2022</td>
+                        <td>10:00</td>
+                        <td>Mario Ruiz</td>
+                        <td>Instalación nueva unidad</td>
+                        <td class="status-modified">Modificada</td>
+                        <td class="action-buttons">
+                            <a href="#" class="btn-accept">Aceptar</a>
+                            <a href="#" class="btn-modify">Modificar</a>
+                            <a href="#" class="btn-close">Cerrar</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>

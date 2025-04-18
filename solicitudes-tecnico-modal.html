@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitudes de Servicio - Técnico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Buenos Aires</div>
+        <ul class="nav-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Mis solicitudes</a></li>
+            <li><a href="#">Mis datos</a></li>
+            <li><a href="#">Cerrar sesión</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Mis Solicitudes de Servicio (Vista de Técnico)</h1>
+        
+        <div class="table-container">
+            <table class="service-table">
+                <thead>
+                    <tr>
+                        <th>Nro SS</th>
+                        <th>Cliente</th>
+                        <th>Tipo SS</th>
+                        <th>Fecha Visita</th>
+                        <th>Hora Visita</th>
+                        <th>Descripción</th>
+                        <th>Estado SS</th>
+                        <th>Opciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>111</td>
+                        <td>Ana Torres</td>
+                        <td>Instalación</td>
+                        <td>02-03-2022</td>
+                        <td>9:00</td>
+                        <td>Instalar equipo</td>
+                        <td class="status-open">Abierta</td>
+                        <td class="action-buttons">
+                            <a href="#" class="btn-accept">Aceptar</a>
+                            <a href="#" class="btn-modify" onclick="openModal()">Modificar</a>
+                            <a href="#" class="btn-close">Cerrar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>777</td>
+                        <td>Ana Torres</td>
+                        <td>Reparación</td>
+                        <td>03-04-2022</td>
+                        <td>15:00</td>
+                        <td>Reparación filtros</td>
+                        <td class="status-modified">Modificada</td>
+                        <td class="action-buttons">
+                            <a href="#" class="btn-accept">Aceptar</a>
+                            <a href="#" class="btn-modify" onclick="openModal()">Modificar</a>
+                            <a href="#" class="btn-close">Cerrar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>999</td>
+                        <td>Ana Torres</td>
+                        <td>Mantención</td>
+                        <td>15-04-2022</td>
+                        <td>14:00</td>
+                        <td>Mantención general</td>
+                        <td class="status-accepted">Aceptada</td>
+                        <td class="action-buttons">
+                            <a href="#" class="btn-accept">Aceptar</a>
+                            <a href="#" class="btn-modify" onclick="openModal()">Modificar</a>
+                            <a href="#" class="btn-close">Cerrar</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- Modal Structure -->
+    <div id="modifyModal" class="modal">
+        <div class="modal-content">
+            <h2>Modificar Solicitud de Servicio</h2>
+            <form class="modal-form">
+                <div class="form-group">
+                    <label for="visitDate">Fecha de la visita:</label>
+                    <input type="date" id="visitDate" value="2022-02-25">
+                </div>
+                <div class="form-group">
+                    <label for="visitTime">Hora de la visita:</label>
+                    <input type="time" id="visitTime" value="09:00">
+                </div>
+                <div class="button-group">
+                    <button type="submit" class="primary-button">Modificar</button>
+                    <button type="button" class="secondary-button" onclick="closeModal()">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function openModal() {
+            document.getElementById("modifyModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("modifyModal").style.display = "none";
+        }
+    </script>
+</body>
+</html>
